@@ -1,0 +1,78 @@
+.imgs__container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #f1f1f1;
+  gap: 2%;
+
+}
+
+.card{
+  width: 30%;
+  height: 400px;
+  margin-bottom: 10px;
+}
+.card img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+ 
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.438);
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  
+  
+}
+.overlay__card{
+  width: 500px;
+  height: 450px;
+  padding: 20px;
+ background-position: center;
+ background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 333;
+  color: #fff;
+  font-size: 24px;
+  animation-duration: 1s;
+}
+.close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+i{
+  cursor: pointer;
+}
+
+
+@keyframes showImage{
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+@keyframes closeImage{
+  0%{
+    transform: scale(1);
+  }100%{
+    transform: scale(0);
+  }
+
+}
+
+
+
