@@ -60,4 +60,3 @@ document.addEventListener("keydown",function(e){
 
 })
 
-console.log(30+30+"ggg")
